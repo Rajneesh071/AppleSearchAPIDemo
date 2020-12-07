@@ -29,7 +29,7 @@ class AppleSearchResultViewModelTest: XCTestCase {
         testClass = nil
     }
 
-    func testTotalItemCountExample() {
+    func testTotalItemCount() {
         XCTAssertEqual(self.testClass.totalItem, 1)
     }
     

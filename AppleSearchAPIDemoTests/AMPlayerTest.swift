@@ -18,6 +18,7 @@ class AMPlayerTest: XCTestCase {
     }
 
     override func tearDown() {
+        soundData = nil
     }
 
     func testMediaPlayer_NotPlayed() {
@@ -28,14 +29,6 @@ class AMPlayerTest: XCTestCase {
         let player = AMPlayer(mediaData: soundData)
         player.play()
         XCTAssertTrue(player.mediaPlayed)
-    }
-    
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
 }
 

@@ -38,6 +38,7 @@ class AppleSearchResultVC: UIViewController {
     }
     
     private func setupUIView() {
+        self.title = "Apple Search"
         setupTableView()
         setupSearchBar()
     }
