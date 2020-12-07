@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'clearn build test'
+    actions: 'clear build test'
     scheme: ''
     sdk: 'iphoneos'
     configuration: 'Release'
