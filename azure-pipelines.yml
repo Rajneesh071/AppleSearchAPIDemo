@@ -4,17 +4,55 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
 
 trigger:
-- main
+- master
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'macos-10.14'
+
+variables:
+  - group: AppleSearchAPIDemo
+  - name: configuration
+    value: 'Release'
+  - name: sdk
+    value: 'iphoneos'
 
 steps:
+
+- task: InstallAppleCertificate@2
+  inputs:
+   certSecureFile: '$(p12FileName)'
+   certPwd: '$(p12Password)'
+   keychain: 'temp'
+   deleteCert: true  
+
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+   provisioningProfileLocation: 'secureFiles'
+   provProfileSecureFile: '$(provisioningProfile)'
+   removeProfile: true
+
+
 - task: Xcode@5
   inputs:
     actions: 'build'
-    scheme: ''
-    sdk: 'iphoneos'
-    configuration: 'Release'
+    scheme: 'AppleSearchAPIDemo'
+    sdk: '$(sdk)'
+    configuration: '$(configuration)'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, 11, default, specifyPath
+    xcodeVersion: 'default'
+    packageApp: true
+    signingOption: 'manual' # Optional. Options: nosign, default, manual, auto
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.ipa'
+    targetFolder: '$(build.artifactStagingDirectory)'
+    overWrite: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(build.artifactStagingDirectory)/output/$(sdk)/$(configuration)' 
+    artifactName: 'drop' 
+    publishLocation: 'Container'
