@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'test'
+    actions: 'build'
     scheme: ''
     sdk: 'iphoneos'
     configuration: 'Release'
