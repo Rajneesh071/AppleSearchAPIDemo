@@ -12,9 +12,9 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'test'
+    actions: 'build'
     scheme: ''
-    sdk: 'iPhone 8'
+    sdk: 'iphoneos'
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, 11, default, specifyPath
