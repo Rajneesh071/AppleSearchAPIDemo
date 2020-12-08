@@ -9,7 +9,7 @@ This project contain following things
 3. Xcode code coverage
 4. Microsoft Azure pipelining (Build + Release IPA)
 
-Azure pipelining done using the 
+Azure pipelining done using the [turorial]
 
 [turorial]: https://damienaicheh.github.io/ios/azure/devops/2019/12/05/build-sign-your-ios-application-using-azure-devops-en.html
 
