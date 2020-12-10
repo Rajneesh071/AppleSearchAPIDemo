@@ -42,7 +42,7 @@ steps:
 - task: Xcode@5
   displayName: 'Clean, Build and Test Project'
   inputs:
-    actions: 'clean build test'
+    actions: 'clean build'
     scheme: 'AppleSearchAPIDemo'
     sdk: '$(sdk)'
     configuration: '$(configuration)'
