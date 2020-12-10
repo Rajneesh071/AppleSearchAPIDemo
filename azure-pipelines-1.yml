@@ -15,7 +15,7 @@ variables:
   - name: lintpath
     value: '$(agent.buildDirectory)/build_$(Build.BuildId)_lintreport.html'
   - name: coveragepath
-    value: '$(agent.buildDirectory)/coverage/'
+    value: '$(agent.buildDirectory)'
   - name: configuration
     value: 'Release'
   - name: sdk
