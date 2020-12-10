@@ -72,20 +72,8 @@ steps:
     publishLocation: 'Container'
     
 - script: |
-    brew install swiftlint
     gem install slather
   displayName: 'Install Swiftlint and Slather'
-
-- task: CmdLine@2
-  displayName: 'Run swiftlint'
-  inputs:
-    script: 'swiftlint --reporter html > $(lintpath)'
-    
-- task: PublishPipelineArtifact@1
-  displayName: 'Publish swiftlint report'
-  inputs:
-    targetPath: '$(lintpath)'
-    artifactName: 'swiftlint_report'
 
 - task: CmdLine@2
   displayName: 'Run slather'
