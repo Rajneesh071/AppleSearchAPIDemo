@@ -5,5 +5,3 @@ configuration: Debug
 xcodeproj: ./AppleSearchAPIDemo.xcodeproj
 scheme: AppleSearchAPIDemo
 source_directory: ./AppleSearchAPIDemo
-ignore:
-  - ThirdParty/*
