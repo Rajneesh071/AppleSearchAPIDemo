@@ -7,6 +7,7 @@
 //
 
 import Foundation
+@testable import AppleSearchAPIDemo
 
 struct TestData {
     static let story : Json4Swift_Base = {

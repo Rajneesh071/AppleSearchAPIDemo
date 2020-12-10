@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+@testable import AppleSearchAPIDemo
 
 class MockURLSession: URLSessionProtocol {
 

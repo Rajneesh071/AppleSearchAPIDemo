@@ -85,9 +85,4 @@ class AppleSearchResultViewModelTest: XCTestCase {
 }
 
 
-class MokeImageDownloader: ImageDownloaderProtocol {
-    var dummyImage : UIImage? = nil
-    func downloadImage(urlStr: String, onCompletion: @escaping (UIImage?) -> Void) {
-        onCompletion(dummyImage)
-    }
-}
+

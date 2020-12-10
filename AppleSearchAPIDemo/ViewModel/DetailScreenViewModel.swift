@@ -19,6 +19,10 @@ class DetailScreenViewModel {
         return result.previewUrl
     }
     
+    func dummyFunc() -> String {
+        return "Raj"
+    }
+    
     // ** Track name as Detail screen title
     var title : String {
         if let text = result.trackName {

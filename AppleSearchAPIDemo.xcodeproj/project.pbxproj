@@ -18,30 +18,22 @@
 		470648EA256E6CEA00B39292 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648E8256E6CEA00B39292 /* Json4Swift_Base.swift */; };
 		470648F02574C21000B39292 /* DetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648EF2574C21000B39292 /* DetailScreenViewModel.swift */; };
 		470648F42577764300B39292 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648F32577764300B39292 /* HttpClient.swift */; };
-		470648F625777F0C00B39292 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648F525777F0C00B39292 /* MockURLSession.swift */; };
 		470648F825777F5D00B39292 /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648F725777F5D00B39292 /* HttpClientTests.swift */; };
-		470648F925778E8D00B39292 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648F32577764300B39292 /* HttpClient.swift */; };
-		470648FF2577A32600B39292 /* Story.json in Resources */ = {isa = PBXBuildFile; fileRef = 470648FE2577A32600B39292 /* Story.json */; };
-		470649022577A60200B39292 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470649002577A5E000B39292 /* TestData.swift */; };
 		4706490C2577E6C500B39292 /* AppleSearchResultViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706490B2577E6C500B39292 /* AppleSearchResultViewModelTest.swift */; };
-		470649112577EDE700B39292 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648E8256E6CEA00B39292 /* Json4Swift_Base.swift */; };
-		470649122577EDF000B39292 /* AppleSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648B5256D29C500B39292 /* AppleSearchResultViewModel.swift */; };
-		470649132577EE0F00B39292 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648E7256E6CEA00B39292 /* Results.swift */; };
-		470649142577EE2E00B39292 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648E5256E6B2C00B39292 /* APIRequest.swift */; };
-		470649152577F01800B39292 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470649002577A5E000B39292 /* TestData.swift */; };
-		470649162577F07F00B39292 /* Story.json in Resources */ = {isa = PBXBuildFile; fileRef = 470648FE2577A32600B39292 /* Story.json */; };
 		470649182578D2E500B39292 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470649172578D2E500B39292 /* ImageDownloader.swift */; };
 		4706491C2578D83000B39292 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706491B2578D83000B39292 /* PlayerViewController.swift */; };
-		4706491D257A077400B39292 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470649172578D2E500B39292 /* ImageDownloader.swift */; };
 		4706491F257A0BC200B39292 /* DetailScreenViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706491E257A0BC200B39292 /* DetailScreenViewModelTest.swift */; };
-		47064921257A0F7500B39292 /* DetailScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648EF2574C21000B39292 /* DetailScreenViewModel.swift */; };
 		4706492A257B951C00B39292 /* AMPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47064929257B951C00B39292 /* AMPlayerTest.swift */; };
-		4706492D257B9AC800B39292 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4706492C257B9AC800B39292 /* sound.mp3 */; };
-		4706492E257B9AD800B39292 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4706492C257B9AC800B39292 /* sound.mp3 */; };
 		47064930257B9FBC00B39292 /* PlayerViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706492F257B9FBC00B39292 /* PlayerViewControllerTest.swift */; };
-		47064931257BA63000B39292 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706491B2578D83000B39292 /* PlayerViewController.swift */; };
 		47064933257D196D00B39292 /* AppleSearchResultVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47064932257D196D00B39292 /* AppleSearchResultVCTest.swift */; };
-		47064934257D199300B39292 /* AppleSearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47064895256D27F800B39292 /* AppleSearchResultVC.swift */; };
+		47925BAA2580CA1500525696 /* DummyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47925BA92580CA1500525696 /* DummyClass.swift */; };
+		47925BB02580CEB900525696 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648F525777F0C00B39292 /* MockURLSession.swift */; };
+		47925BB12580CEC600525696 /* MokeImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47925BAE2580CCBF00525696 /* MokeImageDownloader.swift */; };
+		47925BB22580CED100525696 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470649002577A5E000B39292 /* TestData.swift */; };
+		47925BB32580CED700525696 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4706492C257B9AC800B39292 /* sound.mp3 */; };
+		47925BB42580CEDE00525696 /* Story.json in Resources */ = {isa = PBXBuildFile; fileRef = 470648FE2577A32600B39292 /* Story.json */; };
+		47925BB52580CF3200525696 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4706492C257B9AC800B39292 /* sound.mp3 */; };
+		47925BB62580CF3500525696 /* Story.json in Resources */ = {isa = PBXBuildFile; fileRef = 470648FE2577A32600B39292 /* Story.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +74,8 @@
 		4706492C257B9AC800B39292 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		4706492F257B9FBC00B39292 /* PlayerViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewControllerTest.swift; sourceTree = "<group>"; };
 		47064932257D196D00B39292 /* AppleSearchResultVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearchResultVCTest.swift; sourceTree = "<group>"; };
+		47925BA92580CA1500525696 /* DummyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyClass.swift; sourceTree = "<group>"; };
+		47925BAE2580CCBF00525696 /* MokeImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokeImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +150,7 @@
 			children = (
 				470648B5256D29C500B39292 /* AppleSearchResultViewModel.swift */,
 				470648EF2574C21000B39292 /* DetailScreenViewModel.swift */,
+				47925BA92580CA1500525696 /* DummyClass.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				470648F525777F0C00B39292 /* MockURLSession.swift */,
+				47925BAE2580CCBF00525696 /* MokeImageDownloader.swift */,
 				470649002577A5E000B39292 /* TestData.swift */,
 				4706492C257B9AC800B39292 /* sound.mp3 */,
 				470648FE2577A32600B39292 /* Story.json */,
@@ -280,10 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				470649162577F07F00B39292 /* Story.json in Resources */,
 				4706489E256D27FA00B39292 /* LaunchScreen.storyboard in Resources */,
+				47925BB52580CF3200525696 /* sound.mp3 in Resources */,
 				4706489B256D27FA00B39292 /* Assets.xcassets in Resources */,
-				4706492D257B9AC800B39292 /* sound.mp3 in Resources */,
+				47925BB62580CF3500525696 /* Story.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4706492E257B9AD800B39292 /* sound.mp3 in Resources */,
-				470648FF2577A32600B39292 /* Story.json in Resources */,
+				47925BB32580CED700525696 /* sound.mp3 in Resources */,
+				47925BB42580CEDE00525696 /* Story.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47064896256D27F800B39292 /* AppleSearchResultVC.swift in Sources */,
-				470649022577A60200B39292 /* TestData.swift in Sources */,
+				47925BAA2580CA1500525696 /* DummyClass.swift in Sources */,
 				470648B6256D29C500B39292 /* AppleSearchResultViewModel.swift in Sources */,
 				470648E9256E6CEA00B39292 /* Results.swift in Sources */,
 				47064892256D27F800B39292 /* AppDelegate.swift in Sources */,
@@ -322,23 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				470648F625777F0C00B39292 /* MockURLSession.swift in Sources */,
+				47925BB22580CED100525696 /* TestData.swift in Sources */,
 				470648F825777F5D00B39292 /* HttpClientTests.swift in Sources */,
-				47064921257A0F7500B39292 /* DetailScreenViewModel.swift in Sources */,
-				470649132577EE0F00B39292 /* Results.swift in Sources */,
 				4706492A257B951C00B39292 /* AMPlayerTest.swift in Sources */,
-				470649152577F01800B39292 /* TestData.swift in Sources */,
-				470648F925778E8D00B39292 /* HttpClient.swift in Sources */,
+				47925BB12580CEC600525696 /* MokeImageDownloader.swift in Sources */,
 				4706491F257A0BC200B39292 /* DetailScreenViewModelTest.swift in Sources */,
 				47064933257D196D00B39292 /* AppleSearchResultVCTest.swift in Sources */,
+				47925BB02580CEB900525696 /* MockURLSession.swift in Sources */,
 				4706490C2577E6C500B39292 /* AppleSearchResultViewModelTest.swift in Sources */,
-				4706491D257A077400B39292 /* ImageDownloader.swift in Sources */,
-				47064934257D199300B39292 /* AppleSearchResultVC.swift in Sources */,
-				470649122577EDF000B39292 /* AppleSearchResultViewModel.swift in Sources */,
 				47064930257B9FBC00B39292 /* PlayerViewControllerTest.swift in Sources */,
-				470649142577EE2E00B39292 /* APIRequest.swift in Sources */,
-				470649112577EDE700B39292 /* Json4Swift_Base.swift in Sources */,
-				47064931257BA63000B39292 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

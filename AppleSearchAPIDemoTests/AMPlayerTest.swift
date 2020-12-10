@@ -6,8 +6,8 @@
 //  Copyright © 2020 BRRV. All rights reserved.
 //
 
-import XCTest
 @testable import AppleSearchAPIDemo
+import XCTest
 
 class AMPlayerTest: XCTestCase {
     var soundData : Data!
