@@ -107,7 +107,7 @@ extension AppleSearchResultVC: UISearchBarDelegate {
     }
 }
 
-#if DEBUG
+
 extension AppleSearchResultVC {
     func exposePrivateTableView() -> UITableView {
         return self.tableView
@@ -116,4 +116,3 @@ extension AppleSearchResultVC {
         return self.searchController
     }
 }
-#endif
