@@ -15,7 +15,7 @@ variables:
   - name: lintpath
     value: '$(agent.buildDirectory)/build_$(Build.BuildId)_lintreport.html'
   - name: coveragepath
-    value: '$(agent.buildDirectory)/raj/'
+    value: '$(agent.buildDirectory)/testCoverage/'
   - name: configuration
     value: 'Release'
   - name: sdk
@@ -42,7 +42,7 @@ steps:
 - task: Xcode@5
   displayName: 'Clean, Build and Test Project'
   inputs:
-    actions: 'clean build'
+    actions: 'clean build test'
     scheme: 'AppleSearchAPIDemo'
     sdk: '$(sdk)'
     configuration: '$(configuration)'
