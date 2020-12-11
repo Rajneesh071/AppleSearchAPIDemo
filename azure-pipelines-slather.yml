@@ -38,8 +38,6 @@ steps:
     provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
     destinationPlatformOption: iOS
     destinationSimulators: 'iPhone 8'
-    useXcpretty: true
-    publishJUnitResults: true
     
 - script: |
     gem install slather
