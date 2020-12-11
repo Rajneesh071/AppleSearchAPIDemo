@@ -32,10 +32,6 @@ steps:
     configuration: '$(configuration)'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default'
-    packageApp: true
-    signingOption: 'manual' # Optional. Options: nosign, default, manual, auto
-    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
-    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
     destinationPlatformOption: iOS
     destinationSimulators: 'iPhone 8'
     
