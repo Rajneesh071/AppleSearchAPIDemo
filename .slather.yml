@@ -1,7 +1,9 @@
 # .slather.yml
 
 coverage_service: cobertura_xml
-configuration: Debug
+configuration: Release
 xcodeproj: ./AppleSearchAPIDemo.xcodeproj
 scheme: AppleSearchAPIDemo
 source_directory: ./AppleSearchAPIDemo
+ignore:
+- ThirdParty/*
