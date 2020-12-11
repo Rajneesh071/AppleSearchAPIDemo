@@ -1,0 +1,58 @@
+# Xcode
+# Build, test, and archive an Xcode workspace on macOS.
+# Add steps that install certificates, test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+
+trigger:
+- main
+
+pool:
+  vmImage: 'macos-10.14'
+
+variables:
+  - group: AppleSearchAPIDemo
+  - group: projectSettings
+  - name: coveragepath
+    value: '$(agent.buildDirectory)/testCoverage/'
+  - name: configuration
+    value: 'Debug'
+  - name: sdk
+    value: 'iphoneos'
+    
+name: 'build_$(Build.BuildId)_$(Date:yyyy-MM-dd hh-mm-ss)UTC_$(Rev:r)'
+
+steps:
+
+- task: Xcode@5
+  displayName: 'Clean, Build and Test Project'
+  inputs:
+    actions: 'clean build test'
+    scheme: 'AppleSearchAPIDemo'
+    sdk: '$(sdk)'
+    configuration: '$(configuration)'
+    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcodeVersion: 'default'
+    packageApp: true
+    signingOption: 'manual' # Optional. Options: nosign, default, manual, auto
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+    destinationPlatformOption: iOS
+    destinationSimulators: 'iPhone 8'
+    useXcpretty: true
+    publishJUnitResults: true
+    
+- script: |
+    gem install slather
+  displayName: 'Install Slather'
+
+- task: CmdLine@2
+  displayName: 'Run slather'
+  inputs:
+    script: 'slather coverage -x --output-directory $(coveragepath)'
+    
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish slather report'
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(coveragepath)/cobertura.xml'
+  condition: always()
