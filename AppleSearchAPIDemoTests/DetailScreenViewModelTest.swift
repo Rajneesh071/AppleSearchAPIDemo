@@ -31,6 +31,8 @@ class DetailScreenViewModelTest: XCTestCase {
     func testDummyClass() {
         
         let testClass = DummyClass(value: DummyModel(dummyValue: 6))
-        XCTAssertEqual(testClass.dummyFunc(), 6)
+        //changed to test failing test
+        XCTAssertEqual(testClass.dummyFunc(), 5)
+        
     }
 }
