@@ -1,0 +1,26 @@
+# Xcode
+# Build, test, and archive an Xcode workspace on macOS.
+# Add steps that install certificates, test, sign, and distribute an app, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+
+trigger:
+- main
+
+pool:
+  vmImage: 'macos-10.14'
+
+variables:
+  - name: configuration
+    value: 'Debug'
+  - name: sdk
+    value: 'iphoneos'
+
+steps:
+- task: Xcode@5
+  inputs:
+    actions: 'build'
+    scheme: 'AppleSearchAPIDemo'
+    sdk: '$(sdk)'
+    configuration: '$(configuration)'
+    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    xcodeVersion: 'default'
