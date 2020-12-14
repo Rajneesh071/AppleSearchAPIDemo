@@ -10,7 +10,7 @@ import XCTest
 @testable import AppleSearchAPIDemo
 
 class DetailScreenViewModelTest: XCTestCase {
-    
+    let testData = TestData.story
     override func setUp() {
         
     }
@@ -18,21 +18,22 @@ class DetailScreenViewModelTest: XCTestCase {
     override func tearDown() {
         
     }
-    
-    func testDummyFunc() {
-        let testData = TestData.story
+        
+    func testDetailScreenTitle() {
+        
         guard let result = testData.results?.first else {
             return
         }
-        
         let testClass = DetailScreenViewModel(result: result)
-        XCTAssertEqual(testClass.dummyFunc(), "Raj")
+        XCTAssertEqual(testClass.title, result.trackName)
     }
-    func testDummyClass() {
+    
+    func testDetailScreenMediaString() {
         
-        let testClass = DummyClass(value: DummyModel(dummyValue: 6))
-        //changed to test failing test
-        XCTAssertEqual(testClass.dummyFunc(), 5)
-        
+        guard let result = testData.results?.first else {
+            return
+        }
+        let testClass = DetailScreenViewModel(result: result)
+        XCTAssertEqual(testClass.mediaString, result.previewUrl)
     }
 }

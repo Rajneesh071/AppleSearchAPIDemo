@@ -26,7 +26,6 @@
 		4706492A257B951C00B39292 /* AMPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47064929257B951C00B39292 /* AMPlayerTest.swift */; };
 		47064930257B9FBC00B39292 /* PlayerViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706492F257B9FBC00B39292 /* PlayerViewControllerTest.swift */; };
 		47064933257D196D00B39292 /* AppleSearchResultVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47064932257D196D00B39292 /* AppleSearchResultVCTest.swift */; };
-		47925BAA2580CA1500525696 /* DummyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47925BA92580CA1500525696 /* DummyClass.swift */; };
 		47925BB02580CEB900525696 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470648F525777F0C00B39292 /* MockURLSession.swift */; };
 		47925BB12580CEC600525696 /* MokeImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47925BAE2580CCBF00525696 /* MokeImageDownloader.swift */; };
 		47925BB22580CED100525696 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470649002577A5E000B39292 /* TestData.swift */; };
@@ -74,7 +73,6 @@
 		4706492C257B9AC800B39292 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		4706492F257B9FBC00B39292 /* PlayerViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewControllerTest.swift; sourceTree = "<group>"; };
 		47064932257D196D00B39292 /* AppleSearchResultVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSearchResultVCTest.swift; sourceTree = "<group>"; };
-		47925BA92580CA1500525696 /* DummyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyClass.swift; sourceTree = "<group>"; };
 		47925BAE2580CCBF00525696 /* MokeImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokeImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +148,6 @@
 			children = (
 				470648B5256D29C500B39292 /* AppleSearchResultViewModel.swift */,
 				470648EF2574C21000B39292 /* DetailScreenViewModel.swift */,
-				47925BA92580CA1500525696 /* DummyClass.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -300,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47064896256D27F800B39292 /* AppleSearchResultVC.swift in Sources */,
-				47925BAA2580CA1500525696 /* DummyClass.swift in Sources */,
 				470648B6256D29C500B39292 /* AppleSearchResultViewModel.swift in Sources */,
 				470648E9256E6CEA00B39292 /* Results.swift in Sources */,
 				47064892256D27F800B39292 /* AppDelegate.swift in Sources */,
