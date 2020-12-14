@@ -1,6 +1,9 @@
 # AppleSearchAPIDemo
+# Build
+[![Build Status](https://dev.azure.com/rajneeshtailor/AppleSearchAPIDemo/_apis/build/status/Build?branchName=master)](https://dev.azure.com/rajneeshtailor/AppleSearchAPIDemo/_build/latest?definitionId=12&branchName=master)
 
-[![Build Status](https://dev.azure.com/rajneeshtailor/AppleSearchAPIDemo/_apis/build/status/Rajneesh071.AppleSearchAPIDemo?branchName=master)](https://dev.azure.com/rajneeshtailor/AppleSearchAPIDemo/_build/latest?definitionId=6&branchName=master)
+# Code Coverage
+[![Build Status](https://dev.azure.com/rajneeshtailor/AppleSearchAPIDemo/_apis/build/status/CodeCoverage?branchName=master)](https://dev.azure.com/rajneeshtailor/AppleSearchAPIDemo/_build/latest?definitionId=11&branchName=master)
 
 This project contain following things
 
