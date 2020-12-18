@@ -15,10 +15,12 @@ variables:
   - name: sdk
     value: 'iphoneos'
 
+name: 'Clean and Build_Build_Id_$(Build.BuildId)_$(Date:yyyy-MM-dd hh-mm-ss)UTC_$(Rev:r)'
+
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'build'
+    actions: 'clean build'
     scheme: 'AppleSearchAPIDemo'
     sdk: '$(sdk)'
     configuration: '$(configuration)'
