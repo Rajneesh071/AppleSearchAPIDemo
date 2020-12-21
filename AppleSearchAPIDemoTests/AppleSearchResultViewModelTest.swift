@@ -82,6 +82,9 @@ class AppleSearchResultViewModelTest: XCTestCase {
         }
         XCTAssertEqual(finalImage,UIImage(named: "loading"))
     }
+    func testFailItForTesting() {
+        XCTAssertTrue(false, "Testing")
+    }
 }
 
 
